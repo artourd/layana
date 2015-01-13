@@ -1,0 +1,128 @@
+.area{
+    _height: 400px;
+    _width: 400px;
+    position: relative;
+}
+canvas{
+        _transform: perspective( 400px ) rotateX( 23deg );
+}
+#bg_walls{
+    position: absolute;
+    top: 0;
+    left: 0;    
+}
+#bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*person*/
+.pers {
+    background: url('../img/hero3.png') transparent no-repeat 0px 0px;
+    height: 48px;
+    width: 32px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 5;
+    _transform: perspective( 50px ) rotateX( -23deg );
+}  
+.pers.left{
+    background-position: 0px -48px;
+} 
+.pers.left.s1{
+    background-position: -32px -48px;
+}
+.pers.left.s2{
+    background-position: -64px -48px;
+}
+.pers.left.s3{
+    background-position: -96px -48px;
+}
+.pers.right{
+    background-position: 0px -96px;
+}
+.pers.right.s1{
+    background-position: -32px -96px;
+} 
+.pers.right.s2{
+    background-position: -64px -96px;
+} 
+.pers.right.s3{
+    background-position: -96px -96px;
+} 
+.pers.down{
+    background-position: 0px 0px;
+}
+.pers.down.s1{
+    background-position: -32px 0px;
+}
+.pers.down.s2{
+    background-position: -64px 0px;
+}
+.pers.down.s3{
+    background-position: -96px 0px;
+}
+.pers.up{
+    background-position: 0px -144px;
+}
+.pers.up.s1{
+    background-position: -32px -144px;
+}
+.pers.up.s2{
+    background-position: -64px -144px;
+}
+.pers.up.s3{
+    background-position: -96px -144px;
+}
+.pers.dead{
+    background-position: 0px -24px;
+} 
+
+/*fire*/
+.fire {
+    background: url('../img/fire.png') transparent no-repeat 0px 0px;
+    height: 32px;
+    width: 28px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    
+}
+.fire.left {
+    background-position: 0px -60px;
+    _transform: perspective( 100px ) rotateX( -45deg );
+}
+.fire.right {
+    background-position: 0px -30px;
+    _transform: perspective( 100px ) rotateX( -45deg );
+}
+.fire.up {
+    background-position: 0px -90px;
+}
+
+/*monster*/
+.monster {
+    background: url('../img/spider.png') transparent no-repeat 0px 0px;
+    height: 32px;
+    width: 28px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 5;
+    transform: perspective( 40px ) rotateX( -23deg );
+}  
+.monster.left{
+    background-position: -56px -27px;
+} 
+.monster.right{
+    background-position: -56px -83px;
+} 
+.monster.down{
+    background-position: -56px 4px;
+} 
+.monster.up{
+    background-position: -56px -55px;
+}   

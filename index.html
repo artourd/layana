@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        
+        <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+        
+        <script type="text/javascript" src="js/banklvl.js"></script>
+        <script type="text/javascript" src="js/labyrinth.js"></script>        
+        <script type="text/javascript" src="js/fireball.js"></script>
+        <script type="text/javascript" src="js/hero.js"></script>        
+        <script type="text/javascript" src="js/monster.js"></script>
+        <script type="text/javascript" src="js/game.js"></script> 
+        <script type="text/javascript" src="js/main.js"></script>
+        
+        <link type="text/css" href="css/main.css" rel="stylesheet" />
+        <title>Layana v0.4</title>
+    </head>
+    <body>
+        <div class="area">
+            <canvas id="bg"  width="600" height="400">your browser does not support the canvas tag </canvas>
+            <canvas id="bg_walls"  width="600" height="400">your browser does not support the canvas tag </canvas>
+        </div>
+        <div class="score">
+            <div class="lifes"></div>
+            <div class="xp"></div>
+            <div class="level"></div>
+            <div class="keys"></div>
+            <div class="bufs"></div>
+        </div>
+        <audio id="snd_bg" loop>
+            <source src="sound/bg_cave.mp3" type="audio/mpeg">
+        </audio> 
+        <audio id="snd_fire">
+            <source src="sound/fire.mp3" type="audio/mpeg">
+        </audio>     
+        <img id='img_bg' src="img/bg.jpg" height="1" width="1" />
+    </body>
+</html>
